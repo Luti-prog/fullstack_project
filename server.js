@@ -141,9 +141,9 @@ app.patch("/updat/:id", upload.single("jacket"), async (req,res,next) => {
 //* Catch-all handler: Any GET request that dont match any backend routes will be going into this handler
 // when react has certain routes, they will be coming here
 // react app takes over and uses client-side routing
-app.get("*", (req, res) => {
-  res.sendFile(__dirname+"/frontend/dist/index.html");
-})
+// app.get("*", (req, res) => {
+//  res.sendFile(__dirname+"/frontend/dist/index.html");
+// })
 
 
 //* Error handling middleware
